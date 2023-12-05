@@ -42,14 +42,14 @@ const Header = () => {
             console.log("use logout");
             localStorage.removeItem("usersdatatoken");
             setLoginData(false)
-            history("/");
+            history("https://password-reset-dlwi.onrender.com/");
         } else {
             console.log("error");
         }
     }
 
     const goDash = () => {
-        history("/dash")
+        history("https://password-reset-dlwi.onrender.com/dash")
     }
 
     const goError = () => {
