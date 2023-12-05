@@ -13,7 +13,7 @@ const Dashboard = () => {
     const DashboardValid = async () => {
         let token = localStorage.getItem("usersdatatoken");
 
-        const res = await fetch("/validuser", {
+        const res = await fetch("https://password-reset-dlwi.onrender.com/validuser", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",

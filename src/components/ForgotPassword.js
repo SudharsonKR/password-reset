@@ -17,7 +17,7 @@ const ForgotPassword = () => {
     const [message, setMessage] = useState("");
 
     const userValid = async () => {
-        const res = await fetch(`/forgot-password/${id}/${token}`, {
+        const res = await fetch(`https://password-reset-dlwi.onrender.com/forgot-password/${id}/${token}`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
@@ -52,7 +52,7 @@ const ForgotPassword = () => {
                 position: "top-center"
             });
         } else {
-            const res = await fetch(`/${id}/${token}`, {
+            const res = await fetch(`https://password-reset-dlwi.onrender.com/${id}/${token}`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

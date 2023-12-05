@@ -50,7 +50,7 @@ const Register = () => {
         }else{
             // console.log("user registration successfully done")
             // console.log(inpval)
-            const data = await fetch("/register", {
+            const data = await fetch("https://password-reset-dlwi.onrender.com/register", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
