@@ -42,7 +42,7 @@ if(email === ''){
   alert("Password must 8 char - One number, one Caps letter and One Special Char must in password")
 }else{
   // console.log("Login Successfull done")
-  const data = await fetch("/login", {
+  const data = await fetch("https://password-reset-dlwi.onrender.com/login", {
     method: "POST",
     headers: {
         "Content-Type": "application/json"
@@ -51,7 +51,7 @@ if(email === ''){
         email, password
     })
 });
-
+console.log(data)
 const res = await data.json();
 console.log(res);
 
