@@ -25,7 +25,7 @@ const Header = () => {
     const logoutuser = async () => {
         let token = localStorage.getItem("usersdatatoken");
 
-        const res = await fetch("https://password-reset-dlwi.onrender.com/logout", {
+        const res = await fetch("/logout", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
@@ -42,14 +42,14 @@ const Header = () => {
             console.log("use logout");
             localStorage.removeItem("usersdatatoken");
             setLoginData(false)
-            history("https://password-reset-dlwi.onrender.com/");
+            history("/");
         } else {
             console.log("error");
         }
     }
 
     const goDash = () => {
-        history("https://password-reset-dlwi.onrender.com/dash")
+        history("/dash")
     }
 
     const goError = () => {
