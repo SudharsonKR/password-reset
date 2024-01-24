@@ -74,7 +74,7 @@ if(res.status === 201){
           <form>
             <div className="form_input">
               <label htmlFor='email'>Email</label>
-              <input type='email' value={inpval.email} onChange={setVal} name='email' id='email' placeholder='Enter Email id'/>
+              <input type='email' value={inpval.email} onChange={setVal} name='email' id='email' placeholder='Enter Email'/>
               </div>
               <div className="form_input">
               <label htmlFor='password'>Password</label>
